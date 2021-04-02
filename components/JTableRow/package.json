@@ -1,7 +1,8 @@
 {
-  "name": "@briar-zimmerman/j-table-row",
-  "version": "0.0.1",
+  "name": "@briar.zimmerman/j-table-row",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "24e1733a05b38b3e60660a09bb4e7619d12620e7"
 }
