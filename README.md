@@ -1,6 +1,7 @@
 ## Episource Salesforce Design Storybook
 ### Setup
 npm install --global lerna
+npm install
 
 ### Run locally
 npm run build-storybook
