@@ -1,10 +1,10 @@
 {
   "name": "@briar.zimmerman/j-table",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@briar.zimmerman/j-table-row": "^0.0.3"
+    "@briar.zimmerman/j-table-row": "^0.0.4"
   }
 }
