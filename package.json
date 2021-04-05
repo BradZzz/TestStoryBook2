@@ -8,6 +8,7 @@
     "@storybook/addon-links": "^6.2.2",
     "@storybook/vue": "^6.2.2",
     "babel-loader": "^8.2.2",
+    "chromatic": "^5.7.1",
     "lerna": "^4.0.0",
     "vue-loader": "^15.9.6"
   },
@@ -16,7 +17,12 @@
     "vue-template-compiler": "^2.6.12"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=38cbb90bb45b --storybook-build-dir storybook-static"
   }
 }

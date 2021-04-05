@@ -1,0 +1,21 @@
+Watching /Users/briarzimmerman/Documents/git/episource/POC/vue_storybook/episource_storybook and all sub-directories not excluded by your .gitignore. Will not monitor dotfiles.
+Found & ignored ./components/JTable/node_modules ; is listed in .gitignore
+Found & ignored ./node_modules ; is listed in .gitignore
+Found & ignored ./storybook-static ; is listed in .gitignore
+Found & ignored ./stories/button.css ; has ignored extension
+Found & ignored ./stories/header.css ; has ignored extension
+Found & ignored ./stories/page.css ; has ignored extension
+
+Starting: build-storybook -- --output-dir /var/folders/l6/gnd8qzxx7bl6h6f0__8__y900000gn/T/chromatic--70639-cGgA4N4gkbPS
+node:internal/modules/cjs/loader:926
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/briarzimmerman/Documents/git/episource/POC/vue_storybook/episource_storybook/build-storybook'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:923:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:768:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
