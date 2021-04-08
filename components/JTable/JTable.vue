@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import JTableRow from '@briar.zimmerman/j-table-row/JTableRow'
+import JTableRow from '@briar.zimmerman/j-table-row'
 export default {
   name: 'JTable',
   props: {
