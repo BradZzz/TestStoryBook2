@@ -11,6 +11,6 @@
     "./sfc": "JTable.vue"
   },
   "dependencies": {
-    "@briar.zimmerman/j-table-row": "^0.0.4"
+    "@briar.zimmerman/j-table-row": "^0.1.0"
   }
 }
