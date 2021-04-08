@@ -5,7 +5,7 @@ npm install --save-dev chromatic
 npm install
 
 ### Create new component
-Before embarking on your journey, be sure to get acquainted with the basics
+Before embarking on your journey, be sure to get acquainted with the basics:
 https://storybook.js.org/tutorials/intro-to-storybook/vue/en/get-started/
 
 #### Single component
@@ -23,6 +23,8 @@ Use JTable in the components folder as a baseline for your new component
 4) Define the correct entry points in the package.json
 5) Make sure that all of the child components of your new parent component are defined in the package.json, like the JTable defines it's child, JTableRow
 6) Run locally, publish to npm, or publish to chromatic
+
+If the children of a parent component are updated, don't forget to bump the version number of the child component in the package.json file as well!
 
 #### package.json
 Be super careful with your package.json. In order for your new package to be read correctly by Episource's Salesforce Vue framework, you need to make sure that the 'main', 'module', 'unpkg', and 'browser' keys are set correctly in the root file of your component.
