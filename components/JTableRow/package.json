@@ -1,8 +1,14 @@
 {
   "name": "@briar.zimmerman/j-table-row",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publishConfig": {
     "access": "public"
+  },
+  "main": "JTableRow.vue",
+  "module": "JTableRow.vue",
+  "unpkg": "JTableRow.vue",
+  "browser": {
+    "./sfc": "JTableRow.vue"
   },
   "gitHead": "24e1733a05b38b3e60660a09bb4e7619d12620e7"
 }

@@ -1,8 +1,14 @@
 {
   "name": "@briar.zimmerman/j-table",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publishConfig": {
     "access": "public"
+  },
+  "main": "JTable.vue",
+  "module": "JTable.vue",
+  "unpkg": "JTable.vue",
+  "browser": {
+    "./sfc": "JTable.vue"
   },
   "dependencies": {
     "@briar.zimmerman/j-table-row": "^0.0.4"

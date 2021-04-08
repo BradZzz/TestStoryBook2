@@ -40,6 +40,6 @@ th {
   text-align: left;
   padding: 8px;
   font-size: 13px;
-  color: #8d8d92;
+  color: blue;
 }
 </style>
