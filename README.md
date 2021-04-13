@@ -26,6 +26,14 @@ Use JTable in the components folder as a baseline for your new component
 
 If the children of a parent component are updated, don't forget to bump the version number of the child component in the package.json file as well!
 
+#### Storybook Controls
+What good is a component that isn't configurable? Learn how to configure the storybook's controls here
+
+https://storybook.js.org/docs/react/essentials/controls
+
+#### Third Party Libraries
+If you need to install something like Element UI that applies to all components, add to the .stories/preview.js file. See the current file for an example of what to do
+
 #### package.json
 Be super careful with your package.json. In order for your new package to be read correctly by Episource's Salesforce Vue framework, you need to make sure that the 'main', 'module', 'unpkg', and 'browser' keys are set correctly in the root file of your component.
 

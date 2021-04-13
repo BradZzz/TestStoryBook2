@@ -1,4 +1,6 @@
-import Vue from 'vue';
+import Vue from 'vue'
+
+/* Begin Element UI import */
 import {
   Pagination,
   Dialog,
@@ -162,27 +164,19 @@ Vue.prototype.$confirm = MessageBox.confirm;
 Vue.prototype.$prompt = MessageBox.prompt;
 Vue.prototype.$notify = Notification;
 Vue.prototype.$message = Message;
+/* End Element UI import */
 
-import { MINIMAL_VIEWPORTS, INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { configure } from '@storybook/vue'
 
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  viewport: {
-    viewports: { ...MINIMAL_VIEWPORTS, ...INITIAL_VIEWPORTS },
-  },
-  backgrounds: {
-    default: 'white',
-    values: [
-      { name: 'white', value: '#ffffff' },
-      { name: 'twitter', value: '#00aced' },
-      { name: 'facebook', value: '#3b5998' },
-      { name: 'black', value: '#000000' },
-    ],
-  },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
+// import your vue plugins
+import Vuex from 'vuex'
+
+// install your vue plugins
+Vue.use(Vuex);
+
+function loadStories() {
+    // you can require as many stories as you need
+    require("../components/**/*.stories.mdx");
+    require("../components/**/*.stories.@(js|jsx|ts|tsx)");
 }
+configure(loadStories, module);

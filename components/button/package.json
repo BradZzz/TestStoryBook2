@@ -1,0 +1,13 @@
+{
+  "name": "@briar.zimmerman/button",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "Button.vue",
+  "module": "Button.vue",
+  "unpkg": "Button.vue",
+  "browser": {
+    "./sfc": "Button.vue"
+  }
+}
