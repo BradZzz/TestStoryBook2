@@ -1,5 +1,5 @@
 {
-  "name": "@briar.zimmerman/input",
+  "name": "@briar.zimmerman/input-element",
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"

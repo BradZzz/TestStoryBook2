@@ -1,5 +1,5 @@
 <template>
-  <el-input placeholder="Please input" v-model="input"></el-input>
+  <el-input :style="style" placeholder="Please input" v-model="input" class="episource-input"></el-input>
 </template>
 
 <script>
@@ -10,6 +10,10 @@ export default {
   props: {
   },
   computed: {
+    style () {
+      return {
+      };
+    }
   },
   data () {
     return {
@@ -21,5 +25,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.episource-input .el-input__inner {
+  padding: 1em !important;
+}
 </style>

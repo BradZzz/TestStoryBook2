@@ -1,0 +1,13 @@
+{
+  "name": "@briar.zimmerman/input-material",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "Input.vue",
+  "module": "Input.vue",
+  "unpkg": "Input.vue",
+  "browser": {
+    "./sfc": "Input.vue"
+  }
+}
