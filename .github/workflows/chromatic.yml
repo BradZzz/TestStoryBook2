@@ -12,11 +12,4 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v1
-      - run: npm i && npm run build-storybook
-        #👇 Adds Chromatic as a step in the workflow
-      - uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
-        with:
-          #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/vue/en/deploy/ to obtain it
-          projectToken: project-token
-          token: ${{ secrets.CHROMATIC_GITHUB_TOKEN }}
+      - run: npm i && npm run build-storybook && npm run chromatic
