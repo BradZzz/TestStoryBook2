@@ -9,10 +9,6 @@
 <script>
 import { action } from '@storybook/addon-actions';
 
-// the vue css needs to be imported on an individual basis
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
-
 export default {
   name: 'Input',
   props: {
