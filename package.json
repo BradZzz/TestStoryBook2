@@ -16,6 +16,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "@briar.zimmerman/j-table-row": "^0.1.0",
     "element-ui": "^2.15.1",
     "require-from-url": "^3.1.3",
     "vue": "^2.6.12",
