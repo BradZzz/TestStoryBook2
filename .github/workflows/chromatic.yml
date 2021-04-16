@@ -12,4 +12,4 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v1
-      - run: npm i && npm run build-storybook && npm run chromatic
+      - run: npm i && npm run build-storybook && npx chromatic --project-token=${{ secrets.CHROMATIC_GITHUB_TOKEN }} --storybook-build-dir storybook-static
